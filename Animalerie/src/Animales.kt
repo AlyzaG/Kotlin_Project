@@ -1,14 +1,14 @@
 
 interface AnimalesInfo{
 
-    fun printChienInfo(scooby: Animal1){
-        scooby.printChienInfo()
+    fun printInfo(scooby: Animal1){
+        scooby.printInfo()
     }
-    fun printChatInfo(felix: Animal2){
-        felix.printChatInfo()
+    fun printInfo(felix: Animal2){
+        felix.printInfo()
     }
-    fun printPerroquetInfo(gaspard: Animal3){
-        gaspard.printPerroquetInfo()
+    fun printInfo(gaspard: Animal3){
+        gaspard.printInfo()
     }
 
     fun printChienNoise(scooby: Animal1){
@@ -27,6 +27,7 @@ class InfoAnimales : AnimalesInfo{}
 
 class QuiSuisJe : AnimalesInfo{
 
+
 }
 
 fun main() {
@@ -41,9 +42,9 @@ fun main() {
     println("======= Mon animal parle =======")
 
     val info = QuiSuisJe()
-    info.printChienInfo(Animal1())
-    info.printChatInfo(Animal2())
-    info.printPerroquetInfo(Animal3())
+    info.printInfo(Animal1())
+    info.printInfo(Animal2())
+    info.printInfo(Animal3())
 
 
 }

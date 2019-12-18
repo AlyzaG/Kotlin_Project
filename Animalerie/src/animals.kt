@@ -2,7 +2,7 @@ import java.util.*
 
 class Animal1(val name:String = "chien", val sound:String = "aboie", val noise:String = "ouaf ouaf"){
 
-    fun printChienInfo(){
+    fun printInfo(){
         println("Je suis un $name qui $sound")
     }
     fun printChienNoise(){
@@ -11,7 +11,7 @@ class Animal1(val name:String = "chien", val sound:String = "aboie", val noise:S
     }
 }
 class Animal2(val name:String = "chat", val sound:String = "miaule", val noise:String = "miaou"){
-    fun printChatInfo(){
+    fun printInfo(){
         println("Je suis un $name qui $sound")
 
     }
@@ -21,7 +21,7 @@ class Animal2(val name:String = "chat", val sound:String = "miaule", val noise:S
     }
 }
 class Animal3(val name:String = "perroquet", val sound:String = "piaille", val noise:String = "coco" ){
-    fun printPerroquetInfo(){
+    fun printInfo(){
         println("je suis un $name qui $sound")
     }
     fun printPerroquetNoise(){
@@ -49,6 +49,10 @@ class Animalerie(){
 
 class ShowAll(){
     fun show(){
+        val catch = QuiSuisJe()
+        catch.printInfo(Animal1())
+        catch.printInfo(Animal2())
+        catch.printInfo(Animal3())
 
 
     }
